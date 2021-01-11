@@ -50,13 +50,13 @@ function getDescription(frontmatterDescription, permalink) {
 	var description = 'n8n is an extendable workflow automation tool that enables you to connect anything to everything via its open, fair-code model.';
 	var nodePath = /\/nodes\/n8n-nodes-base/;
 	var credentialPath = /\/credentials\//;
-	// if (frontmatterDescription) {
-	// 	if (nodePath.test(permalink) || credentialPath.test(permalink)) {
-	// 		description = `${frontmatterDescription}, an extendable workflow automation tool that enables you to connect anything to everything via its open, fair-code model.`;
-	// 	} else {
-	// 		description = frontmatterDescription;
-	// 	}
-	// }
+	if (frontmatterDescription) {
+		if (nodePath.test(permalink) || credentialPath.test(permalink)) {
+			description = `${frontmatterDescription}, an extendable workflow automation tool that enables you to connect anything to everything via its open, fair-code model.`;
+		} else {
+			description = frontmatterDescription;
+		}
+	}
 	return description;
 }
 

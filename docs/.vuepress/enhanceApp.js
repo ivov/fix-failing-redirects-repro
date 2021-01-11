@@ -1,10 +1,6 @@
 export default ({ router, siteData }) => {
 	// Redirects users which use links of old documentation to pages of new documentation
 
-	console.log(window.location.hash);
-	console.log(router);
-	console.log(siteData);
-
 	// Redirects paths from old -> new
 	const redirectPaths = {
 		'#/nodes?id=function-node': 'reference/function-nodes.html#function-node',

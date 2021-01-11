@@ -1,4 +1,5 @@
 ---
+permalink: /nodes/n8n-nodes-base.cron
 description: Learn how to use the Cron node in n8n
 ---
 
